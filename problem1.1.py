@@ -18,6 +18,7 @@ def products(nums):
     for num in reversed(nums):
         if suffix_numbers:
             suffix_numbers.append(suffix_numbers[-1] * num)
+            print(suffix_numbers[-1])
         else:
             suffix_numbers.append(num)
     suffix_numbers = list(reversed(suffix_numbers))
